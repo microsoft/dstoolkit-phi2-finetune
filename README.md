@@ -1,24 +1,28 @@
-# Project
+# Finetuning Phi-2
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Introduction 
+This repository contains step by step instructions on how to finetune Microsoft's Phi-2 model with your own data. You can read Phi-2 technical paper [here](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/) and the conference paper [here](https://arxiv.org/abs/2306.11644).
 
-As the maintainer of this project, please make a few updates:
+There are three files included in this repository:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+    (1) requirements.txt
+    (2) phi2Finetune.ipynb
+    (3) qna_qnas.xlsx
 
-## Contributing
+(1) contains the required python libaries which need to be installed on a new enviroment to run (2). File (2) is the self contained notebook which provides step by step instructions on how to finetune Microsofts' Phi-2 language model using your own data. (3) is some sample data (taken from [Microsoft 365 FAQ](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-for-home-and-school-faq)) which can be used to run in the notebook if you wish, otherwise it can be used as an example to base your own data on.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+## Getting Started
+To get started:
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+1.  Create a vm with a GPU or use a local machine with a GPU.
+2.  Clone this repository on a vm or local machine.
+3.  Create a new python enviroment installing all libraries listed in requirements.txt.
+4. Follow step by step instructions in phi2Finetune.ipynb.
+
+The VM (Azure ML) that was used in creation of this notebook was: Standard_NC6s_v3 - 1 x NVIDIA Tesla V100.
+
+## Contribute
+Please reach out to henrytaylor@microsoft.com, for any questions, suggestions, or improvements. Thank you!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
