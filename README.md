@@ -11,6 +11,8 @@ There are three files included in this repository:
 
 (1) contains the required python libaries which need to be installed on a new enviroment to run (2). File (2) is the self contained notebook which provides step by step instructions on how to finetune Microsofts' Phi-2 language model using your own data. (3) is some sample data (taken from [Microsoft 365 FAQ](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-for-home-and-school-faq)) which can be used to run in the notebook if you wish, otherwise it can be used as an example to base your own data on.
 
+If your GPU has sufficient VRAM (around 4-5gb) it is possible to finetune Phi-2 locally as the model is much smaller than models such as GPT4. However, i found it was much quicker to train on a VM (via Azure ML). The VM that was used in creation of this notebook was: Standard_NC6s_v3 with GPU: 1 x NVIDIA Tesla V100.
+
 ## Getting Started
 To get started:
 
@@ -18,8 +20,6 @@ To get started:
 2.  Clone this repository on a vm or local machine.
 3.  Create a new python enviroment installing all libraries listed in requirements.txt.
 4. Follow step by step instructions in phi2Finetune.ipynb.
-
-The VM (Azure ML) that was used in creation of this notebook was: Standard_NC6s_v3 - 1 x NVIDIA Tesla V100.
 
 ## Contribute
 Please reach out to henrytaylor@microsoft.com, for any questions, suggestions, or improvements. Thank you!
