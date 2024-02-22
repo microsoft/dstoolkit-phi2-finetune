@@ -12,3 +12,5 @@ bitsandbytes
 matplotlib
 pandas 
 openpyxl
+accelerate
+bitsandbytes
