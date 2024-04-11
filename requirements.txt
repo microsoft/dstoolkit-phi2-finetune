@@ -10,3 +10,5 @@ trl
 matplotlib
 pandas 
 openpyxl
+accelerate
+bitsandbytes

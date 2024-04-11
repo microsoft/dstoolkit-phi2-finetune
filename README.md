@@ -18,7 +18,7 @@ To get started:
 
 1.  Create a vm with a GPU or use a local machine with a GPU.
 2.  Clone this repository on a vm or local machine.
-3.  Create a new python enviroment installing all libraries listed in requirements.txt. See notebook for commands.
+3.  Create a fresh python/conda enviroment installing all libraries listed in requirements.txt. See notebook for commands.
 4. Follow step by step instructions in phi2Finetune.ipynb.
 
 ## Contribute
